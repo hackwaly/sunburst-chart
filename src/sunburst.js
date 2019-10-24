@@ -88,7 +88,7 @@ export default Kapsule({
   init: function(domNode, state) {
     state.chartId = Math.round(Math.random() * 1e12); // Unique ID for DOM elems
 
-    state.radiusScale = scaleSqrt();
+    state.radiusScale = scaleLinear();
     state.angleScale = scaleLinear()
       .domain([0, 10]) // For initial build-in animation
       .range([0, 2 * Math.PI])

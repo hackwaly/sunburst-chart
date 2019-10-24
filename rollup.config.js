@@ -4,7 +4,9 @@ import postCss from 'rollup-plugin-postcss';
 import postCssSimpleVars from 'postcss-simple-vars';
 import postCssNested from 'postcss-nested';
 import babel from 'rollup-plugin-babel';
-import { name, homepage, version } from './package.json';
+import { name as name0, homepage, version } from './package.json';
+
+const name = name0.replace(/^@[A-Za-z0-9_-]+\//, '');
 
 export default {
   input: 'src/index.js',
